@@ -8,24 +8,22 @@ import com.mshs.pokemon_api.PersistenceLayer.Entity.Pokemon;
 @SpringBootTest
 public class PokemonRepositoryTest {
 
-    @Autowired // Inyeccion de
+    @Autowired
     private PokemonRepository pokemonRepository;
 
     @Test
     public void guardarPokemon() {
 
-        // construyendo entidad
+
 
         Pokemon pokemon = Pokemon.builder()
-                // el id no se 
+             
                 .pokemonName("Charmander")
                 .pokemonType("Fire")
-                .pokemonBaseExperience(64)
-                .pokemonHeight(45)
-                .pokemonWeight(34)
+                
                 .build();
 
-        pokemonRepository.save(pokemon); // save recibe una entidad por lo que hay que constuirla
+        pokemonRepository.save(pokemon);
     }
 
 
