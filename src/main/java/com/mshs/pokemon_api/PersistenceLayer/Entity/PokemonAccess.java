@@ -3,7 +3,7 @@ package com.mshs.pokemon_api.PersistenceLayer.Entity;
 import java.time.LocalDateTime;
 
 import jakarta.persistence.*;
-//import java.util.*;
+
 
 @Entity
 @Table(name = "access")
@@ -21,14 +21,14 @@ public class PokemonAccess {
     private String accessResponseBody;
 
     @ManyToOne
-    @JoinColumn(name = "pokemon_id")  // Esta es la columna en la base de datos que enlaza con Pokemon.pokemonId
-    private Pokemon pokemon;  // Este atributo debe coincidir con el valor de mappedBy en la entidad Pokemon
+    @JoinColumn(name = "pokemon_id")  
+    private Pokemon pokemon;  
 
     
     
-    // Constructores
+  
     public PokemonAccess() {
-        // Constructor sin parámetros
+       
     }
 
 
