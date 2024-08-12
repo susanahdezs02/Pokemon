@@ -9,7 +9,6 @@ import jakarta.persistence.*;
 @Entity 
 @Table(name = "pokemon") /* Entidad con la que queremos que se mapee a nuestra BD */
 public class Pokemon {
-      /* Encapsulamos los datos */
       @Id // Derfinimos la Primary key en esta clase, que es la que se va a mapear en la
       private Long pokemonId;
       private String pokemonName;
