@@ -7,16 +7,16 @@ import jakarta.persistence.*;
 
 
 @Entity 
-@Table(name = "pokemon") /* Entidad con la que queremos que se mapee a nuestra BD */
+@Table(name = "pokemon")
 public class Pokemon {
-      @Id // Derfinimos la Primary key en esta clase, que es la que se va a mapear en la
+      @Id 
       private Long pokemonId;
       private String pokemonName;
-      private String imageUrl; // Esta es la URL de la imagen del Pokémon
+      private String imageUrl; 
 
       
       @OneToMany(mappedBy = "pokemon")
-      private List<PokemonAccess> accesses;  // Relación uno a muchos con PokemonAccess
+      private List<PokemonAccess> accesses; 
 
 
       public Pokemon() {
