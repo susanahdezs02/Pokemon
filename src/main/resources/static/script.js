@@ -2,11 +2,10 @@ document.getElementById('fetchButton').addEventListener('click', () => {
     const pokemonId = document.getElementById('pokemonId').value;
 
     if (pokemonId) {
-        // Realiza una solicitud a la API usando fetch
+      
         fetch(`http://localhost:8080/pokemones/${pokemonId}`)
-            .then(response => response.text()) // Cambia esto a response.json() si la respuesta es JSON
+            .then(response => response.text())
             .then(data => {
-                // Actualiza el contenido del div con los datos recibidos
                 const infoContainer = document.getElementById('info-container');
                infoContainer.innerHTML = data;
 
