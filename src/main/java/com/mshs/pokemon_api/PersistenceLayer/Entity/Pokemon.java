@@ -1,7 +1,4 @@
 package com.mshs.pokemon_api.PersistenceLayer.Entity;
-/* Entity/Model
-Responsabilidad: Representar la estructura de los datos en la base de datos.
-Interacción: Define los atributos de la entidad que se almacenarán en la base de datos y Es usada por el Repository para saber qué información gestionar. */
 
 import java.util.List;
 
@@ -9,10 +6,7 @@ import jakarta.persistence.*;
 
 
 
-@Entity /*
-         * Define nuestra clase como una entidad y hará que a la hora de ejecutar el
-         * programa esta clase se mapee a una tabla en una Base de datos
-         */
+@Entity 
 @Table(name = "pokemon") /* Entidad con la que queremos que se mapee a nuestra BD */
 public class Pokemon {
       /* Encapsulamos los datos */
@@ -22,15 +16,12 @@ public class Pokemon {
       private String imageUrl; // Esta es la URL de la imagen del Pokémon
 
       
-
-      // Relaciones
       @OneToMany(mappedBy = "pokemon")
       private List<PokemonAccess> accesses;  // Relación uno a muchos con PokemonAccess
 
 
-      // Constructores
       public Pokemon() {
-            // Constructor sin parámetros
+           
       }
 
 
