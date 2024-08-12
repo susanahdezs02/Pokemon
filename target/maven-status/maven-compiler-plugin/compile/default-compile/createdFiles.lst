@@ -1,0 +1,7 @@
+com\mshs\pokemon_api\PresentationLayer\Controllers\PokemonController.class
+com\mshs\pokemon_api\PokemonApiApplication.class
+com\mshs\pokemon_api\PersistenceLayer\Entity\Pokemon.class
+com\mshs\pokemon_api\PersistenceLayer\Entity\PokemonAccess.class
+com\mshs\pokemon_api\BussinessLayer\Services\PokemonService.class
+com\mshs\pokemon_api\PersistenceLayer\Repository\PokemonRepository.class
+com\mshs\pokemon_api\PersistenceLayer\Repository\AccessRepository.class
